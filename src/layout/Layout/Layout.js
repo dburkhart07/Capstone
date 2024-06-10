@@ -1,3 +1,4 @@
+import React from 'react';
 import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 

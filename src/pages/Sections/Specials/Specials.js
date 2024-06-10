@@ -1,7 +1,7 @@
 import React from "react";
 import "./Specials.css";
 import Button from "../../../components/Button/Button";
-import FoodCard from "../../../components/Card/Card";
+import Card from "../../../components/Card/Card";
 import { useNavigate } from "react-router-dom";
 import pages from "../../../utils/pages";
 
@@ -50,7 +50,7 @@ const Specials = () => {
 
       <div className="header-list">
         {specials.map((special) => (
-          <FoodCard
+          <Card
             key={special.id}
             title={special.title}
             description={special.description}

@@ -2,7 +2,7 @@ import React from "react";
 import "./Reviews.css";
 import ReviewCard from "../../../components/ReviewCard/ReviewCard";
 
-const Reviews = [
+const reviews = [
   {
     id: 1,
     author: "Isabella Montgomery",
@@ -32,7 +32,7 @@ const Reviews = [
   },
 ];
 
-const reviews = () => {
+const Reviews = () => {
   return (
     <div className="review-background">
       <div className="reviews">
@@ -42,7 +42,7 @@ const reviews = () => {
 
         <div className="reviews-list">
           {reviews.map((review) => (
-            <reviewCard
+            <ReviewCard
             
               key={review.id}
               author={review.author}
